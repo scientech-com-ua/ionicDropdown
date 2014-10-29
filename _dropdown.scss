@@ -1,0 +1,32 @@
+
+/**
+ * Dropdowns
+ * --------------------------------------------------
+ * Dropdowns are independent views which float over content
+ */
+
+.dropdown-view {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  z-index: $z-index-dropdown;
+  display: block;
+  margin-left: -$dropdown-width / 2;
+  height: $dropdown-height;
+  background-color: $dropdown-bg-color;
+  box-shadow: $dropdown-box-shadow;
+  opacity: 0;
+  overflow: hidden;
+
+  .item:first-child {
+    border-top: 0;
+  }
+
+  .item:last-child {
+    border-bottom: 0;
+  }
+
+  &.dropdown-bottom {
+    margin-top: -10px;
+  }
+}
